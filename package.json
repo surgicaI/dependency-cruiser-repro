@@ -1,0 +1,18 @@
+{
+  "name": "dependency-cruiser-repro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "ttsc -p . --noEmit false",
+    "dependency-graph": "depcruise --ts-config tsconfig.json --output-type dot -f dependency-graph src"
+  },
+  "dependencies": {
+    "ttypescript": "^1.5.10",
+    "typescript": "3.8.3",
+    "typescript-transform-paths": "^1.1.14",
+    "dependency-cruiser": "^9.3.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
